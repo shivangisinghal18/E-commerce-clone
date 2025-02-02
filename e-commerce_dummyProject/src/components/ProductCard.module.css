@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.productcard:hover{
+    z-index: 100;
+    border: 1px solid #e4e5ee;
+    border-bottom: none;
+}
+
+.addtocartbtn_container{
+    border: 1px solid #e4e5ee;
+    border-top: none;
+    background-color: white;
+    width:100%;
+    z-index: 100;
+    position: absolute;
+    top:100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.productcard{
+    border: 1px solid #e4e5ee;
+    border-right:none;
+    border-bottom: none;
+    position: relative;
+}
+.productcardContent{
+    padding: 20px;
+}
+.addtocartbtn{
+    border-radius: 0.75rem;
+    background-color: #233A95;
+    height:30px;
+    width:80%;
+    color:white;
+    border: none;
+}
+.addtocartbtn:hover{
+    cursor: pointer;
+}
+.addtocartbtnclicked{
+    position: relative;
+    border-radius: 0.75rem;
+    background-color: white;
+    height:30px;
+    width:80%;
+    border:1px solid #eaebf5;
+}
+.decrement{
+    position: absolute;
+    left: 0;
+    top:0;
+    border: none;
+    border-radius: 0.75rem 0 0 0.75rem;
+    height:30px;
+    width: 30px;
+    background-color: #e4e5ee;
+}
+.decrement:hover{
+    cursor: pointer;
+}
+.increment{
+    position: absolute;
+    right: 0;
+    top:0;
+    border: none;
+    border-radius: 0 0.75rem 0.75rem 0;
+    height:30px;
+    width: 30px;
+    background-color: #FFCD00;
+}
+.increment:hover{
+    cursor: pointer;
+}
+.image_container{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    height:10rem;
+    
+}
+.image_container:hover{
+    cursor: pointer;
+}
+.image_container img{
+    width:90%;
+    object-fit:contain;
+}
+
+.productcard h1{
+    font-size:1rem;
+}
+.price{
+    color:red;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.title{
+    font-size: 0.8rem;
+    word-spacing: 0.2rem;
+    margin: 20px 0 10px 0;
+}
+.count{
+    color:#233A95;
+    font-size: 0.9vw;
+}
+.instock{
+    color:#00B853;
+    margin: 0.2rem 0;
+    font-size: 0.7rem;
+}
+
+
+
+@media(max-width:960px){
+    .price{
+        font-size: 1rem;
+    }
+    .instock{
+        font-size: 0.6rem;
+    }
+    .count{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width:768px){
+.title{
+    font-size: 0.9rem;
+}
+.count{
+    font-size: 0.9rem;
+}
+.instock{
+    margin: 0.5rem 0;
+    font-size: 0.8rem;
+}
+}

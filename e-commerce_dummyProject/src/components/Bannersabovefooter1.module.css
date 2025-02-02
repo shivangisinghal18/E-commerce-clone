@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.bannerContainer{
+    width:32%;
+    position: relative;
+}
+
+.imagecontainer img{
+    width:100%;
+    border-radius: 8px;
+}
+.bannercontent{
+    position:absolute;
+    top:20%;
+    left:8%;
+}
+.discount{
+    font-size: 0.7vw;
+    color:#00b853;
+    margin-bottom: 1vh;
+}
+.title{
+    font-size: 1.3vw;
+    margin-bottom: 1vh;
+}
+.description{
+    font-size: 0.65vw;
+    color:#3e445a;
+    opacity: 0.6;
+    margin-bottom: 0.8vw;
+}
+.shopnowbtn{
+    border:none;
+    border-radius: 2rem;
+    font-size: 0.7vw;
+    width:60%;
+    height:1.5vw;
+    color: white;
+    background-color: #c2c2d3;;
+}
+@media (max-width:768px){
+    .bannerContainer{
+        width:100%;
+        margin-bottom: 20px;
+    }
+    .discount{
+        font-size: 2.5vw;
+    }
+    .title{
+        font-size: 4.8vw;
+    }
+    .description{
+        font-size: 2.5vw;
+        color:#3e445a;
+        opacity: 0.6;
+        margin-bottom: 2.5vw;
+    }
+    .shopnowbtn{
+        border:none;
+        border-radius: 2rem;
+        font-size: 1.7vw;
+        width:40%;
+        height:4.5vw;
+        color: white;
+        background-color: #c2c2d3;;
+    }
+}

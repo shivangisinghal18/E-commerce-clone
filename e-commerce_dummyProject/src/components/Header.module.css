@@ -1,0 +1,577 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+}
+
+.header{
+    width: 100%;
+    margin: 0;
+}
+.disclaimer{
+    background-color: #233a95;
+    color: white;
+    font-size: 1rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.disclaimer p{
+    display:block;
+    margin:10px;
+}
+.navbar{
+    height:40px;
+    min-width:62vw;
+    max-width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+hr{
+    opacity: 0.5;
+}
+.navbar span{
+    font-size: 0.8rem;
+}
+.navbar__navigation{
+    margin:0 8vw 0 0; 
+}
+.navbar__navigation span{
+    margin: 0 0.2vw;
+}
+.navbar__info span{
+    margin-left: auto;
+    margin-right: 0.2vw;
+}
+.separator{
+    color:#e4e5ee;
+}
+.aboutStore{
+    padding:30px 0;
+    display:flex;  
+    justify-content: left;
+    align-items: center;
+    margin: 0 auto;
+    min-width:62vw;
+    max-width: 80%;
+}
+.icons{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+.icons p{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+.user{
+    height: 2rem;
+    margin-right: 20px;
+}
+.icon{
+    height: 2rem;
+    margin-right: 20px;
+}
+.iconlast{
+    height: 2rem;
+    margin-right: 0;
+    
+    position: relative;
+}
+.iconlast:hover{
+    cursor: pointer;
+}
+.iconlast__icon{
+    height: 100%;
+    top:0;
+    color: red;
+    background-color: #FFF1EE;
+    padding: 4px 10px;
+    border-radius: 50%;
+    width: 1.2rem;
+}
+.count{
+    position: absolute;
+    left:70%;
+    top:0;
+    color: white;
+    background-color: #EA2B0F;
+    border-radius: 50%;
+    padding: 3px 6px;
+    font-size: 0.8rem;
+}
+.logo{
+    width:9vw;
+}
+.logo img{
+    width:9vw;
+    height:2.5vw;
+}
+.logo p{
+    font-size:0.59vw;
+    width: 100%;
+    color:#3E445A;
+    opacity:0.5;
+    margin-right:30px;
+}
+.locationbtn{
+    margin: 0 1.8vw;
+    display:flex;  
+    border: 1px solid #d6d8e0;
+    padding: 0 1vw;
+    border-radius: 5px;
+}
+.locationdesc{
+    font-size: 0.66rem;
+    color:#bbbcc5;
+    margin:11.2px 0 5px 0;
+}
+.locationselect{
+    color:#233a95;
+    font-size: 0.7rem;
+    margin:0 0 11.2px 0;
+}
+.location{
+    border:none;
+    background-color: white;
+    color:#233a95;
+    margin: 0 0 0 10px;
+}
+.location:focus{
+    outline: none;
+}
+.searchinputcontainer{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    height: 52px;
+}
+.searchinput{
+    border: none;
+    border-radius: 5px 0 0 5px;
+    background-color: #F3F4F7;
+    padding-left:  20px;
+    margin: 0;
+    width: 40vw;
+    height: 100%;
+}
+.searchinput:focus{
+    outline: none;
+}
+.searchiconcontainer{
+    background-color: #F3F4F7;
+    border-radius: 0 5px 5px 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.searchiconcontainer img{
+    width: 55%;
+    object-fit: contain;
+}
+.allCategories{
+    display:flex;
+    margin: 0 auto;
+    min-width: 62vw;
+    max-width: 80%;
+    align-items: center;
+}
+.allCategories__nav{
+    display:flex ;
+    margin-left: auto;
+}
+.home{
+    font-size: 0.7rem;
+    padding: 1rem;
+}
+.homelist{
+    position: absolute;
+    width:8%;
+    top:100%;
+    border-top: 1px solid #F3F4F7;;
+    z-index: 100;
+    background-color: white;
+    text-align:center;
+    margin: 0 20px 40px 20px;
+    padding: 20px 0px;
+    transform:translateX(-50%);
+}
+.homelist p{
+    margin:10px;
+    color:#76777a;
+}
+.homelist p:hover{
+    cursor: pointer;
+    color:#2BBEF9;
+}
+.home:hover{
+    cursor: pointer;
+    color:#2BBEF9;
+    background-color: #F0FAFF;
+    border-radius: 2rem;
+}
+.menus{
+    margin-left:2vw;
+    font-size: 0.7rem;
+    padding: 1rem;
+}
+.menus:hover{
+    cursor: pointer;
+    color:#2BBEF9;
+    background-color: #F0FAFF;
+    border-radius: 2rem;
+}
+.allcatbtn{
+    border: none;
+    border-radius: 2rem;
+    width:12vw;
+    height:3vw;
+    background-color: #2BBEF9;
+    color:white;
+    font-weight: 500;
+    font-size: 0.8vw;
+}
+.allcatbtn:hover{
+    cursor:pointer;
+}
+.productsnum{
+    display: block;
+    margin: 0 auto;
+    border:none;
+    border-radius: 0.75rem;
+    color:#76777a;
+    font-size: 0.5vw;
+    width:7vw;
+    height: 1.2vw;
+    transform: translateY(-50%);
+}
+.productsnum{
+    cursor: pointer;
+}
+.header{
+    position: relative;
+}
+
+.shoplist{
+    display:flex;
+    justify-content: space-around;
+    position: absolute;
+    top:100%;
+    left: 0;
+    width:100%;
+    z-index: 100;
+    background-color: white;
+    text-align: left;
+    padding: 30px 19vw;
+}
+.shoplist_content p{
+    margin-bottom: 10px;
+    color:#76777a ;
+}
+.shoplist_content p:hover{
+    color:#2BBEF9;
+}
+.shoplist_content h3{
+    margin-bottom: 10px;
+    color: #233a95;
+}
+.allCategories__list{
+    position: absolute;
+    width:15%;
+    top:100%;
+    border-top: 1px solid #F3F4F7;
+    z-index: 100;
+    background-color: white;
+    text-align: left;
+    color:#76777a;
+    padding: 20px 0;
+}
+.allCategories__list p{
+    margin:0 30px 20px 30px;
+    display: flex;
+}
+.allCategories__list p:hover{
+    color:#2BBEF9;
+}
+.allCategories__list hr{
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+.allCategories__listinsideist{
+    position: absolute;
+    left: 100%;
+    top:-0.2%;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #F3F4F7;
+    border-left: 1px solid #F3F4F7;
+    z-index: 100;
+    background-color: white;
+    text-align: left;
+    color:#76777a;
+    padding: 20px 0;
+    z-index: 100;
+}
+.gt{
+    display: block;
+    margin-left: auto;
+}
+.hamburgericon{
+    display: none;
+}
+.hamburgermenu{
+    display:none;
+}
+.active{
+    display: none;
+}
+
+
+@media(max-width:1200px){
+    .navbar{display:none;}
+    .aboutStore{
+        justify-content: center;
+    }
+    .allCategories{
+        display: none;
+    }
+    .locationbtn{
+        display:none;
+    }
+    .logoContainer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px;
+    }
+    .logo{
+        margin: 0 20px;
+        width: 9rem;
+        height: auto;
+    }
+    .logo img{
+        width: 100%;
+        height: auto;
+    }
+    .searchinputcontainer{
+        margin-right: 20px;
+    }
+    .closebtnicon{
+        font-size: 1.4rem;
+        opacity: 0.2;
+    }
+    .hamburgericon{
+        display: block;
+        margin-right: 10px;
+        opacity: 0.5;
+    }
+   
+    .hamburgermenu{
+        display: block;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        width: 420px;
+        height: 100%;
+        z-index: 999;
+        transform: translateX(-100%);
+        transition:transform 0.3s ease-in;
+    }
+    .active {
+        display: block;
+        background-color: white;     
+        position: fixed;
+        top: 0;
+        width: 420px;
+        height: 100%;
+        z-index: 999;
+        transform: translateX(0);  
+       overflow-x: hidden;
+        transition:transform 0.3s ease-in;
+    }
+    .overlay{
+        transform: translateX(-100%);
+        top:0;
+        background-color: black;
+        opacity: 0.2;
+        width:100%;
+        height:100%;
+        position: fixed;
+        z-index: 500;
+    }
+    .overlayactive{
+        transform: translateX(0);
+        top:0;
+        background-color: black;
+        opacity: 0.5;
+        width:100%;
+        height:100%;
+        position: fixed;
+        z-index: 500;
+    }
+    .allCategories__nav{
+        display:block ;
+    }
+    .home{
+        font-size: 0.9rem;
+        padding: 0;
+        padding: 20px 20px;
+    }
+    .homelistham{
+        width:100%;
+        border-top: none;
+        z-index: 100;
+        background-color: white;
+        text-align:left;
+        margin: 0 ;
+        padding: 20px 20px;
+    }
+    .homelistham p{
+        margin:10px;
+        color:#76777a;
+    }
+    .homelist p:hover{
+        cursor: pointer;
+        color:black;
+    }
+    .home:hover{
+        cursor: pointer;
+        color:black;
+        background-color: white;
+        border-radius: 2rem;
+    }
+
+    .shoplist{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: absolute;
+        top:100%;
+        left: 0;
+        width:100%;
+        z-index: 100;
+        background-color: white;
+        text-align: left;
+        padding: 30px 19vw;
+    }
+    .shoplist_content p{
+        margin-bottom: 10px;
+        color:#76777a ;
+    }
+    .shoplist_content p:hover{
+        color:black;
+    }
+    .shoplist_content h3{
+        margin-bottom: 10px;
+        color: #76777a ;
+    }
+
+    .sitenav{
+        margin: 20px 20px;
+        opacity: 0.5;
+    }
+    .menus{
+        margin-left:0;
+        font-size: 0.9rem;
+        padding: 0;
+        padding: 20px 20px;
+    }
+    .menus:hover{
+        cursor: pointer;
+        color:black;
+        background-color: white;
+        border-radius: 2rem;
+    }
+    .dropdowns{
+        display: flex;
+        justify-content: space-between;
+    }
+    .dropdownicon{
+        opacity: 0.2;
+    }
+    hr{
+        opacity: 0.3;
+    }
+    .allcatbtnContainer{
+        padding: 0 20px 20px 20px;
+    }
+    .allcatbtn{
+        border-radius: 0.5rem;
+        width:100%;
+        height:3rem;
+        font-size: 1rem;
+    }
+    .allcatbtn:hover{
+        cursor:pointer;
+    }
+
+.locationbtnham{    
+        display:flex;  
+        border: 1px solid #d6d8e0;
+        padding: 0 1vw;
+        border-radius: 5px;    
+    margin: 0 20px 20px 20px;
+    display:flex;  
+}
+.locationdesc{
+    font-size: 0.8rem;
+    color:#bbbcc5;
+    margin:11.2px 0 5px 0;
+}
+.locationselect{
+    color:#233a95;
+    font-size: 0.9rem;
+    margin:0 0 11.2px 0;
+}
+.location{
+    margin-left: auto;
+}
+.homelistham p{
+    margin:20px;
+    display: flex;
+}
+.allCategories__list p:hover{
+    color:#2BBEF9;
+}
+.allCategories__list hr{
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+.homelistham__listinsideist{
+    width: 100%;
+    background-color: white;
+    text-align: left;
+    color:#76777a;
+    padding-left: 10px;
+    font-size: 0.8rem;
+}
+.gt{
+    display: block;
+    margin-left: auto;
+}
+}
+@media(max-width:768px){
+    .aboutStore{
+        display: flex;
+        justify-content:space-between;
+        max-width: 100%;
+        margin: 0 10px;
+     }
+     .icons{
+        margin-left: 0;
+     }
+     .user{
+        display: none;
+     }
+    .searchinputcontainer{
+        display: none;
+    }
+    .logo p{
+        display: none;
+    }
+}
+

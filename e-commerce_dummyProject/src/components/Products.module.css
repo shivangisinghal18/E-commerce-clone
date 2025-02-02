@@ -1,0 +1,482 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid #e4e5ee ;
+    border-radius:8px;
+}
+.productcard:hover{
+    z-index: 100;
+    border: 1px solid #e4e5ee;
+    border-bottom: none;
+}
+.addtocartbtn_container{
+    border: 1px solid #e4e5ee;
+    border-top: none;
+    background-color: white;
+    width:100%;
+    z-index: 100;
+    position: absolute;
+    top:100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.productcard{
+    
+    border: 1px solid #e4e5ee;
+    border-right:none;
+    border-bottom: none;
+    position: relative;
+}
+.productcardContent{
+    padding: 20px;
+}
+.addtocartbtn{
+    border-radius: 0.75rem;
+    background-color: #233A95;
+    height:30px;
+    width:80%;
+    color:white;
+}
+.image_container{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    height:10rem;
+}
+.image_container img{
+    width:90%;
+    object-fit:contain;
+}
+
+.productcard h1{
+    font-size:1rem;
+}
+.products_section{
+    display:flex;
+    min-width: 62vw;
+    margin: 30px auto;
+    max-width: 80%;
+}
+.singleProduct{
+    margin-right: 1.2vw;
+    border: 2px solid red;
+    padding: 30px 20px;
+    border-radius: 8px;
+    width: 60vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+.singleProduct img{
+    width:60%;
+    margin: 30px auto;
+}
+.deal{
+    color:#233A95;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+.dealpara{
+    color:#C2C2D3;
+    font-size: 0.9rem;
+}
+.price{
+    color:red;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.title{
+    font-size: 0.8rem;
+    word-spacing: 0.2rem;
+    margin: 20px 0 10px 0;
+}
+.titlesingleproduct{
+    font-size: 1rem;
+}
+.dealpara2{
+    color:#C2C2D3;
+    font-size: 0.7vw;
+    margin-left: auto;
+    margin-top: 5vw;
+}
+.count{
+    color:#233A95;
+    font-size: 0.9vw;
+}
+.instock{
+    color:#00B853;
+    margin: 0.2rem 0;
+    font-size: 0.7rem;
+}
+.progressbar{
+    height:1rem;
+    background-color: #e4e5ee;
+    border-radius: 0.75rem;
+}
+.progress_container{
+    position: relative;
+    margin-top: 15px;
+}
+.progressbar_progressed{
+    position:absolute;
+    top:0;
+    left:0;
+    height:1rem;
+    border-radius: 0.75rem;
+    background-image:linear-gradient(to right, #d51243 0%, #ff6048 50%, #ffcd00);
+    width:75%;
+}
+.productsNew{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border: 1px solid #e4e5ee ;
+    border-radius:8px;
+    min-width: 62vw;
+    max-width: 80%;
+    margin: 0 auto;
+}
+.savingpara{
+    min-width: 62vw;
+    max-width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:70px;
+    background-color: #FBEACF;
+    border-radius: 8px;
+    word-spacing: 0.3rem;
+    letter-spacing: 0.25rem;
+}
+.bestsellers__headingcontainer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 62vw;
+    max-width: 80%;
+    margin: 0 auto;
+}
+.bestsellers__desc{
+    color: #9B9BB4;
+    font-size: 0.7rem;
+}
+.bestsellers__heading{
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+}
+.bestsellers__viewallbtn{
+    border:1px solid #e4e5ee ;
+    color:#9B9BB4;
+    background-color: white;
+    border-radius: 2rem;
+    width:100px;
+    height:35px;
+}
+.bestsellers__carousel{
+    min-width: 62vw;
+    max-width: 80%;
+    margin: 20px auto;
+    border:1px solid #e4e5ee ;
+}
+.bestsellers__addtocartbtnContainer{
+    display: flex;
+    justify-content: center;
+}
+.bestsellers__addtocartbtn{
+    border-radius: 2rem;
+    border:none;
+    background-color: #FFCD00;
+    padding: 10px 0;
+    width:100%;
+    top:100%;
+    font-size: 0.8rem;
+    margin: 0 auto;
+}
+.bestsellers__productcard{
+    border: 1px solid #e4e5ee;
+    border-bottom: none;
+    padding:40px 20px 20px 20px;
+    height: fit-content;
+}
+
+.bannerscontainer{
+    display: flex;
+    min-width: 62vw;
+    max-width: 80%;
+    margin: 0 auto 20px auto;
+    justify-content: space-between;
+}
+.banners img{
+    border-radius: 8px;
+    width: 100%;
+}
+.banners{
+    position: relative;
+    width:48%;
+}
+.banners__text{
+    position: absolute;
+    width: 55%;
+    height: 70%;
+    top: 20%;
+    left:5%;
+}
+.banners__discount{
+    color:red;
+    font-size: 0.9rem;
+    margin-bottom: 0.9rem;
+}
+.banners__title{
+    color:#3e445a;
+    font-size: 1.5rem;
+    margin-bottom: 0.9rem;
+}
+.banners__shopnowbtn{
+    border:none;
+    background-color:#233A95 ;
+    color:white;
+    width:40%;
+    height:30px;
+    border-radius: 2rem;
+}
+.banners__shopnowbtn2{
+    border:none;
+    background-color:#ed174a; ;
+    color:white;
+    width:40%;
+    height:30px;
+    border-radius: 2rem;
+}
+.banners__aboutdiscount{
+    font-size: 0.8rem;
+    margin-bottom: 17px;
+}
+.bannersabovefooter1{
+    display:flex;
+    justify-content: space-between;
+    max-width: 80%;
+    min-width:62vw;
+    margin: 20px auto;
+}
+.bannersabovefooter2{
+    display:flex;
+    justify-content: space-between;
+    max-width: 80%;
+    min-width:62vw;
+    margin: 20px auto;
+}
+
+@media(max-width:1160px){
+
+    .banners__discount{
+        color:red;
+        font-size: 0.7rem;
+        margin-bottom: 0.4rem;
+    }
+    .banners__title{
+        color:#3e445a;
+        font-size: 1.2rem;
+        margin-bottom: 0.4rem;
+    }
+    .banners__shopnowbtn{
+        height:1.5rem;
+        font-size: 0.8rem;
+    }
+    .banners__shopnowbtn2{
+        height:1.5rem;
+        font-size: 0.8rem;
+    }
+    .products{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:960px){
+    .singleProduct img{
+        width:90%;
+    }
+    .price{
+        font-size: 1rem;
+    }
+    .titlesingleproduct{
+        font-size: 0.8rem;
+    }
+    .instock{
+        font-size: 0.6rem;
+    }
+    .progressbar_progressed{
+        height: 0.7rem;
+    }
+    .progressbar{
+        height: 0.7rem;
+    }
+    .dealpara2{
+        font-size: 0.6rem;
+    }
+    .count{
+        font-size: 0.8rem;
+    }
+    .banners__discount{
+        color:red;
+        font-size: 0.5rem;
+        margin-bottom: 0.4rem;
+    }
+    .banners__title{
+        color:#3e445a;
+        font-size: 0.8rem;
+        margin-bottom: 0.4rem;
+    }
+    .banners__shopnowbtn{
+        height:1.3rem;
+        font-size: 0.65rem;
+    }
+    .banners__shopnowbtn2{
+        height:1.3rem;
+        font-size: 0.65rem;
+    }
+}
+
+@media (max-width:768px){
+    .products_section{
+        display:block;
+        min-width: none;
+        margin: 30px 10px;
+        max-width: 100%;
+    }
+   
+    .singleProduct{
+        margin:10px 0;
+        width: 100%;
+    }
+
+.singleProduct img{
+    width:30%;
+}
+.deal{
+    font-size:1.5rem;
+}
+.dealpara{
+    font-size: 1rem;
+}
+.title{
+    font-size: 0.9rem;
+}
+.titlesingleproduct{
+    font-size: 1.2rem;
+    
+}
+.dealpara2{
+    font-size: 0.7rem;
+}
+.count{
+    font-size: 0.9rem;
+}
+.instock{
+    margin: 0.5rem 0;
+    font-size: 0.8rem;
+}
+.bannerscontainer{
+    display: block;
+    min-width: 62vw;
+    max-width: 100%;
+    margin: 0 10px 20px 10px;
+}
+.banners{
+    margin-bottom: 10px;
+    width:100%;
+    height: max-content;
+}
+.banners img{
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+}
+.banners__discount{
+    font-size: 0.9rem;
+    margin-bottom: 0.9vw;
+}
+.banners__title{
+    color:#3e445a;
+    font-size: 1.5rem;
+    margin-bottom: 0.9vw;
+}
+.banners__shopnowbtn{
+    border:none;
+    background-color:#233A95 ;
+    color:white;
+    width:max-content;
+    border-radius: 2rem;
+}
+.banners__shopnowbtn2{
+    border:none;
+    background-color:#ed174a; ;
+    color:white;
+    width:max-content;
+    border-radius: 2rem;
+}
+.banners__aboutdiscount{
+    font-size: 0.8rem;
+    margin-bottom: 1.4vw;
+}
+.bannersabovefooter1{
+        display:block;
+        margin:20px 8vw 5vw 8vw;
+    }
+.bannersabovefooter2{
+        display:block;
+        margin:20px 8vw;
+    }
+    .bestsellers__headingcontainer{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 62vw;
+        max-width: 100%;
+        margin: 0 10px;
+    }
+    .savingpara{
+        min-width: 62vw;
+        max-width: 100%;
+        margin: 20px 10px;
+        padding: 0 10px;
+        letter-spacing: 0.1rem;
+    }
+    .bestsellers__carousel{
+        min-width: 62vw;
+        max-width: 100%;
+        margin: 20px 10px;
+    }
+    .productsNew{
+        grid-template-columns: repeat(2, 1fr);
+        min-width: 62vw;
+        max-width: 100%;
+        margin: 0 10px;
+    }
+    .bannersabovefooter1{
+        max-width: 100%;
+        min-width:62vw;
+        margin: 20px 10px;
+    }
+    .bannersabovefooter2{
+        max-width: 100%;
+        min-width:62vw;
+        margin: 20px 10px;
+    }
+    
+}
+@media(max-width:480px){
+    .banners__title{
+        font-size: 1.3rem;
+    }
+    .banners__discount{
+        font-size: 0.9rem;
+    }
+}

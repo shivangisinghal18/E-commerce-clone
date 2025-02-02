@@ -1,0 +1,65 @@
+{
+    "categoryList":[
+        {"name": "Fruits & Vegetables", "id":"1"},
+        {"name": "Meats & Seafood", "id":"2"},
+        {"name": "Breakfast & Dairy", "id":"3"},
+        {"name": " Beverages", "id":"4"},
+        {"name": "Breads and bakery", "id":"5"},
+        {"name": "Frozen Foods", "id":"6"},
+        {"name": "Biscuits & Snacks", "id":"7"},
+        {"name": "Grocery & Staples", "id":"8"}
+    ],
+    "categoryListInsideList":[
+        {"name": "Meats & Seafood"},
+        {"name": "Breakfast & Dairy"},
+        {"name": "Beverage"},
+        {"name": "Breads and bakery"},
+        {"name": "Frozen Foods"},
+        {"name": "Biscuits & Snacks"}
+    ],
+    "shops":[
+        {"name": "Shop Lists", "id":"9"},
+        {"name": "Shop Lists", "id":"10"},
+        {"name": "Shop Lists", "id":"11"},
+        {"name": "Shop Lists", "id":"12"},
+        {"name": "Shop Lists", "id":"13"}
+    ],
+    "shopList":[
+        {"heading": "Shop Lists", "name": "Shop Default"},
+        {"name": "Shop Right Sidebar"},
+        {"name": "Shop Wide"},
+        {"name": "List Left Sidebar"},
+        {"name": "Load More Button"},
+        {"name": "Infinite Scrolling"}
+    ],
+        "homeList":[
+        {"name": "Home 1"},
+        {"name": "Home 1"},
+        {"name": "Home 1"},
+        {"name": "Home 1"},
+        {"name": "Home 1"}
+    ],
+    "heroCarousel":[
+     {"id":"1", "src": "slider-image-6.jpg"},
+     {"id":"2", "src": "slider-image-7.jpg"}
+    ],
+    "footerdescriptions":[
+        {"item":"$20 discount for your first order", "class":"footer_content_1"},
+        {"item":"Join our newsletter and get...", "class":"footer_content_2"},
+        {"item":"Join our email subscription now to get updates", "class":"footer_content_3"},
+        {"item":"on promotions and coupons.", "class":"footer_content_4"}
+        
+    ],
+    "bannerimage":[
+        {"image":"bacola-banner-11.webp",
+        "p1":"WEEKEND DISCOUNT 50%",
+        "p2":"Cookie and Ice Cream",
+        "p3":"Bacola Weekend Discount"
+    },
+         {"image":"bacola-banner-12.webp",
+        "p1":"WEEKEND DISCOUNT 50%",
+        "p2":"Cookie and Ice Cream",
+        "p3":"Bacola Weekend Discount"
+    }
+    ]
+}

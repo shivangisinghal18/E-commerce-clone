@@ -1,0 +1,291 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.maincontainer{
+    background-color: white;
+    border-radius: 6px;
+    max-width: 80%;
+    margin-bottom: 40px;
+    padding: 60px 50px;
+    border: none;
+    border-radius: 8px;
+}
+
+.productName{
+    color: black;
+    font-size: 1.5rem;
+    font-family: 'inter sans-seriff';
+
+}
+.descContainer{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: max-content;
+    margin: 10px 0;
+    font-size: 0.8rem;
+}
+.descContainer div{
+    margin-right: 10px;
+}
+.productBrand{
+    opacity: 0.5;
+}
+.separator{
+    height: 0.8rem;
+    border-left:1px solid #9B9BB4;
+    opacity: 0.7;
+}
+.productDetails{
+    display: flex;
+    justify-content: space-between;
+}
+.imagesection{
+    padding: 20px;
+    width: 45%;
+}
+.imageContainer{
+    width: 60%;
+    margin: auto;
+    margin: 30px auto;
+}
+.imageContainer img{
+    object-fit: contain;
+    width: 100%;
+    margin: auto;
+}
+.dessection{
+    width: 33%;
+}
+.price{
+    color: red;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+.instock{
+    color:#00B853;
+    background-color: #e5f8ed;
+    width: max-content;
+    border-radius: 2rem;
+    font-size: 0.7rem;
+    padding: 6px 12px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.description{
+    line-height: 1.8rem;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+.buttonContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+}
+.buttonContainer p{
+    margin: 0 10px;
+}
+.countOfProducts{
+    border: none;
+    border-radius: 50%;
+    padding: 8px 17px;
+    background-color: #EDEEF5;
+    font-size: 1.5rem;
+    
+}
+.countOfProducts:hover{
+    cursor: pointer;
+    background-color: rgb(255, 205, 0);
+    transition: all 0.3s ease-in-out;
+}
+.addToCartBtn{
+    background-color: #233A95;
+    border: none;
+    border-radius: 2rem;
+    width: 10rem;
+    padding: 12px;
+    color: white;
+    margin-left: 10px;
+}
+.addToCartBtn:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+}
+.wishlistBtn{
+    background-color: white;
+    border: 1px solid #9B9BB4;
+    padding: 10px 12px;
+    border-radius: 2rem;
+    color: black;
+    opacity: 0.5;
+    font-size: 0.7rem;
+    margin-right: 20px;
+}
+.wishlistBtn span{
+    margin-left: 5px;
+}
+.compareBtn{
+    border: none;
+    background-color: white;
+    opacity: 0.5;
+    font-size: 0.7rem;
+}
+.compareBtn span{
+    margin-left: 5px;
+}
+.desc{
+    margin: 20px 0;
+}
+.descItem{
+    display: flex;
+    font-size: 0.8rem;
+}
+.tick{
+    color: #00B853;
+}
+.descItem p{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+.extrainfo{
+    margin: 20px 0;
+    font-size: 0.8rem;
+}
+.extrainfo__para{
+    opacity: 0.5;
+    margin-bottom: 5px;
+}
+.extrainfo span{
+    color: black;
+    font-weight: 800;
+    margin-left: 5px;
+}
+.infosection{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.warning{
+    color: #BE143C;
+    background-color:#FFEEF2 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    padding: 14px 10px;
+    width: 80%;
+}
+.benefits{
+    margin: 20px 0;
+    background-color: #f7F8FD ;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 0.9rem;
+    width: 80%;
+    opacity: 0.8;
+}
+.benefits p{
+    margin: 30px  0;
+    display: flex;
+    align-items: center;
+}
+.benefits span{
+    margin-left: 10px;
+}
+.toast{
+    font-size: 0.9rem;
+}
+@media (max-width:1200px){
+    .productDetails{
+        flex-wrap: wrap;
+    }
+    .infosection{
+        width: 50%;
+        margin-left: auto;
+    }
+    .dessection{
+        width: 50%;
+    }
+    .warning{
+        width: 100%;
+    }
+    .benefits{
+        width: 100%;
+    }
+}
+@media (max-width:991px) {
+    .maincontainer{
+        max-width: 80%;
+        margin: 0 10px;
+        margin-bottom: 40px;
+        padding: 20px 15px;
+    }
+    .productDetails{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .imagesection{
+        padding: 20px;
+        width: 100%;
+    }
+    .imageContainer{
+        width: 40%;
+    }
+    .dessection{
+        width: 100%;
+    }
+    .infosection{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .buttonContainer{
+        justify-content: left;
+    }
+    .buttonContainer p{
+        margin: 0 20px;
+    }
+    .addToCartBtn{
+        margin-left: 20px;
+    }
+    .warning{
+        color: #BE143C;
+        background-color:#FFEEF2 ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 0.8rem;
+        border-radius: 5px;
+        padding: 14px 10px;
+        width: 100%;
+    }
+    .benefits{
+        margin: 20px 0;
+        background-color: #f7F8FD ;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 0.9rem;
+        width: 100%;
+        opacity: 0.8;
+    }
+}
+@media (max-width:768px){
+    .maincontainer{
+        max-width: 100%;
+    }
+    .imageContainer{
+        width: 45%;
+    }
+}
